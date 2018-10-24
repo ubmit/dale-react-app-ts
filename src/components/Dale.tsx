@@ -1,4 +1,12 @@
 import * as React from 'react';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  padding: 10px;
+  width: max-content;
+  background-color: purple;
+  color: whitesmoke;
+`;
 
 interface IDaleProps {
   compiler: string;
@@ -6,9 +14,9 @@ interface IDaleProps {
 }
 
 const Dale = ({ compiler, framework }: IDaleProps) => (
-  <h1>
+  <Wrapper>
     Dale from {compiler} and {framework}!
-  </h1>
+  </Wrapper>
 );
 
 export default Dale;
