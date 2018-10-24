@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-interface DaleProps {
+interface IDaleProps {
   compiler: string;
   framework: string;
 }
 
-const Dale = ({ compiler, framework }: DaleProps) => (
+const Dale = ({ compiler, framework }: IDaleProps) => (
   <h1>
     Dale from {compiler} and {framework}!
   </h1>
